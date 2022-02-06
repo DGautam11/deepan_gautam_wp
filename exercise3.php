@@ -43,7 +43,25 @@ if($color == "red"){
 }
 
 ?>
-  
+
+<!--3. Write a program to grade students based on their total score for a subject.
+ The grading scheme is: Excellent : >80 ;Great >70 & less than 80;Good >60 & less than 70; 
+ Pass >50 & less than 60 & Fail <50 -->
+<?php
+$grade = 60;
+
+if($grade >= 80){
+    echo "Excellent";
+}elseif($grade >= 70 and $grade < 80){
+    echo "Great";
+}elseif($grade >= 60 and $grade < 70) {
+    echo "Good";
+}elseif($grade >= 50 and $grade > 60){
+    echo "Pass";
+}else{
+    echo "Fail";
+}
+?>
 </body>
 </html>
 
