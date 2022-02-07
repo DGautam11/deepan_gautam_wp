@@ -48,20 +48,74 @@ if($color == "red"){
  The grading scheme is: Excellent : >80 ;Great >70 & less than 80;Good >60 & less than 70; 
  Pass >50 & less than 60 & Fail <50 -->
 <?php
-$grade = 60;
+$totalScore = 60;
 
-if($grade >= 80){
+if($totalScore >= 80){
     echo "Excellent";
-}elseif($grade >= 70 and $grade < 80){
+}elseif($totalScore >= 70 and $totalScore < 80){
     echo "Great";
-}elseif($grade >= 60 and $grade < 70) {
+}elseif($totalScore >= 60 and $totalScore < 70) {
     echo "Good";
-}elseif($grade >= 50 and $grade > 60){
+}elseif($totalScore >= 50 and $totalScore > 60){
     echo "Pass";
 }else{
     echo "Fail";
 }
 ?>
+
+<!--4. Write a program to get inputs (age and name) from the user and based on their age, 
+decide if he/she is eligible for voting.
+ (18 or more than 18 years is eligible for voting.) -->
+
+
+
+ <!-- 5. Use a looping statement to construct the following pattern: 
+
+12345678
+1234567
+123456
+12345
+1234
+123
+12
+1-->
+
+<?php
+for($i = 8;$i >= 1;$i--){
+    for($j = 1;$j <= $i;$j++){
+        echo $j;
+    }
+    echo "<br>";
+    
+}
+
+?>
+
+<!--6. Use While loop to print the following pattern: 
+*
+**
+***
+****
+*****
+******
+*******
+******** -->
+
+<?php
+#No of rows
+$rows = 8;
+$x = 1;
+while ($x <= $rows){
+	$y = 1;
+    while($y <= $x){
+        echo "*";
+        $y++;
+    }
+    echo "<br>";
+    $x++;
+} 
+?>
+
 </body>
 </html>
 
